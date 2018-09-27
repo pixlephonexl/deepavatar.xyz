@@ -5,6 +5,6 @@ module.exports = {
     ? '/deepavatar.xyz'
     : '',
   'process.env.BACKEND_URL': prod
-    ? 'https://deepavatar-api-production.herokuapp.com/'
+    ? 'https://deepavatar-api-production.herokuapp.com'
     : 'http://localhost:3010',
 };
