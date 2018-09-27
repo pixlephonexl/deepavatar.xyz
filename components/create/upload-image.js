@@ -27,7 +27,7 @@ export default class UploadImage extends React.Component {
               <React.Fragment>
                 <img
                   className="upload-image__icon"
-                  src="static/cloud-upload.svg"
+                  src="/static/cloud-upload.svg"
                 />
                 <p>
                   Click or drop an image here

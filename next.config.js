@@ -9,6 +9,6 @@ module.exports = withCSS({
       '/create': { page: '/create' },
     };
   },
-  assetPrefix: debug ? './' : `/${pck.name}/`,
+  assetPrefix: debug ? './' : `/deepavatar.xyz`,
 });
 

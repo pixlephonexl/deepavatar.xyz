@@ -18,7 +18,7 @@ export default () => (
         </div>
       </div>
       <div className="hero__right">
-        <img src="static/woman.jpg" />
+        <img src="/static/woman.jpg" />
       </div>
     </div>
   </section>
