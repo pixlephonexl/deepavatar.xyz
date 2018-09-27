@@ -27,7 +27,12 @@ body {
   }
 }
 
+button.btn {
+  border-style: none;
+}
+
 .btn {
+  cursor: pointer;
   display: inline-flex;
   position: relative;
   padding: 0 15px;

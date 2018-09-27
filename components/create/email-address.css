@@ -1,0 +1,18 @@
+.email-address {
+  padding: 50px 0;
+}
+
+.email-address .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email-address input[type=email] {
+  max-width: 350px;
+  padding: 8px;
+  border-radius: 8px;
+  border-style: none;
+  margin-bottom: 50px;
+}
+
