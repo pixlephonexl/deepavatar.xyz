@@ -1,0 +1,12 @@
+.select-transformation {
+  padding: 40px 0;
+}
+
+.select-transformation .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+

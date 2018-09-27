@@ -42,3 +42,16 @@ body {
   background-color: #fff;
 }
 
+.section-title {
+  color: var(--primary-color);
+  text-align: center;
+  font-family: 'Varela Round', Arial, serif;
+  font-weight: 400;
+  font-size: 35px;
+  margin: 30px 0;
+}
+
+.bg-primary .section-title {
+  color: white;
+}
+

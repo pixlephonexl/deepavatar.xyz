@@ -14,6 +14,9 @@ export default class UploadImage extends React.Component {
     const { file } = this.props;
     return (
       <section className="upload-image bg-primary">
+        <h1 className="section-title">
+          Pick an image
+        </h1>
         <div className="container">
           <Dropzone
             accept="image/*"
