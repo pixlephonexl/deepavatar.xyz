@@ -12,7 +12,7 @@ export default () => (
           Transform your avatar with the help of artificial intelligence.
         </h2>
         <div className="hero__cta">
-          <a className="btn btn--inverted" href="#">
+          <a className="btn btn--inverted" href="./create">
             Make your own
           </a>
         </div>

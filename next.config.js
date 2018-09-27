@@ -6,7 +6,7 @@ module.exports = withCSS({
   exportPathMap: function () {
     return {
       '/': { page: '/' },
-      //'/about': { page: '/about' },
+      '/create': { page: '/create' },
     };
   },
   assetPrefix: debug ? './' : `/${pck.name}/`,
