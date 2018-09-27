@@ -9,6 +9,6 @@ module.exports = withCSS({
       //'/about': { page: '/about' },
     };
   },
-  assetPrefix: !debug ? `/${pck.name}/` : '',
+  assetPrefix: debug ? './' : `/${pck.name}/`,
 });
 
