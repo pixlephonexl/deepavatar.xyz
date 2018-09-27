@@ -1,5 +1,124 @@
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/create.js"],{
 
+/***/ "./components/create/email-address.js":
+/*!********************************************!*\
+  !*** ./components/create/email-address.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return EmailAddress; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _email_address_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./email-address.css */ "./components/create/email-address.css");
+/* harmony import */ var _email_address_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_email_address_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _services_static__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/static */ "./services/static.js");
+var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/create/email-address.js";
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+var EmailAddress =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(EmailAddress, _React$Component);
+
+  function EmailAddress() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, EmailAddress);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(EmailAddress)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleChange", function (e) {
+      return _this.props.onChange(e.target.value);
+    });
+
+    return _this;
+  }
+
+  _createClass(EmailAddress, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+        className: "email-address bg-primary",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "section-title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }, "Where should we send it?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        placeholder: "morty@getschwif.ty",
+        type: "email",
+        onChange: this.handleChange,
+        value: this.props.value,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "btn btn--inverted",
+        onClick: this.props.onSubmit,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      }, "Submit")));
+    }
+  }]);
+
+  return EmailAddress;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+
+
+/***/ }),
+
 /***/ "./components/create/select-transformation.js":
 /*!****************************************************!*\
   !*** ./components/create/select-transformation.js ***!
@@ -12,11 +131,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SelectTransformation; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dropzone__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dropzone */ "./node_modules/react-dropzone/dist/es/index.js");
-/* harmony import */ var _select_transformation_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./select-transformation.css */ "./components/create/select-transformation.css");
-/* harmony import */ var _select_transformation_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_select_transformation_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _transformation_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./transformation-button */ "./components/create/transformation-button.js");
-/* harmony import */ var _services_static__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/static */ "./services/static.js");
+/* harmony import */ var _select_transformation_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./select-transformation.css */ "./components/create/select-transformation.css");
+/* harmony import */ var _select_transformation_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_select_transformation_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _transformation_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./transformation-button */ "./components/create/transformation-button.js");
+/* harmony import */ var _services_static__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/static */ "./services/static.js");
 var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/create/select-transformation.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -41,11 +159,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-
 var transformations = ['candy', 'mosaic', 'rain', 'udnie'].map(function (key) {
   return {
     key: key,
-    image: _services_static__WEBPACK_IMPORTED_MODULE_4__["default"].url("/static/transformation-".concat(key, "-cat.jpg"))
+    image: _services_static__WEBPACK_IMPORTED_MODULE_3__["default"].url("/static/transformation-".concat(key, "-cat.jpg"))
   };
 });
 
@@ -69,32 +186,32 @@ function (_React$Component) {
         className: "select-transformation",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 20
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "section-title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 21
         },
         __self: this
       }, "Choose your transformation"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 22
         },
         __self: this
       }, transformations.map(function (transformation) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_transformation_button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_transformation_button__WEBPACK_IMPORTED_MODULE_2__["default"], {
           key: transformation.key,
           selected: transformation.key === _this.props.selected,
           transformation: transformation,
           onClick: _this.props.onClick,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 25
+            lineNumber: 24
           },
           __self: this
         });
@@ -2004,6 +2121,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/footer */ "./components/footer.js");
 /* harmony import */ var _components_create_upload_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/create/upload-image */ "./components/create/upload-image.js");
 /* harmony import */ var _components_create_select_transformation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/create/select-transformation */ "./components/create/select-transformation.js");
+/* harmony import */ var _components_create_email_address__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/create/email-address */ "./components/create/email-address.js");
 var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/pages/create.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -2033,6 +2151,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
 var _default =
 /*#__PURE__*/
 function (_React$Component) {
@@ -2053,7 +2172,14 @@ function (_React$Component) {
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
       file: null,
-      transformation: null
+      transformation: null,
+      email: ''
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleChange", function (email) {
+      return _this.setState({
+        email: email
+      });
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleDrop", function (file) {
@@ -2068,6 +2194,29 @@ function (_React$Component) {
       });
     });
 
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleSuccess", function (res) {
+      if (res.status !== 200) {
+        return _this.handleError();
+      }
+
+      alert('Your image will be processed soon');
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleError", function () {
+      alert('An error append...');
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleSubmit", function () {
+      var formData = new FormData();
+      formData.append('picture', _this.state.file);
+      formData.append('model', _this.state.transformation);
+      formData.append('email', _this.state.email);
+      window.fetch("".concat("http://localhost:3010", "/api/pictures"), {
+        method: 'POST',
+        body: formData
+      }).then(_this.handleSuccess).catch(_this.handleError);
+    });
+
     return _this;
   }
 
@@ -2077,13 +2226,13 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 55
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 56
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_create_upload_image__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -2091,13 +2240,13 @@ function (_React$Component) {
         onDrop: this.handleDrop,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 57
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_divider__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 61
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_create_select_transformation__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -2105,13 +2254,22 @@ function (_React$Component) {
         onClick: this.handleSelect,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 62
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_create_email_address__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        onChange: this.handleChange,
+        onSubmit: this.handleSubmit,
+        value: this.state.email,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 71
         },
         __self: this
       }));
