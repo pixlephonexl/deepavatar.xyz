@@ -102,6 +102,7 @@ function (_React$Component) {
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "btn btn--inverted",
+        disabled: this.props.disabled,
         onClick: this.props.onSubmit,
         __source: {
           fileName: _jsxFileName,
@@ -608,6 +609,54 @@ var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/header.
     },
     __self: this
   }, "deepavatar")));
+});
+
+/***/ }),
+
+/***/ "./components/loading-overlay.js":
+/*!***************************************!*\
+  !*** ./components/loading-overlay.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _loading_overlay_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loading-overlay.css */ "./components/loading-overlay.css");
+/* harmony import */ var _loading_overlay_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_loading_overlay_css__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/loading-overlay.js";
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (props) {
+  return props.visible ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "loading-overlay",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "loading-overlay__ripple",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }))) : null;
 });
 
 /***/ }),
@@ -2119,9 +2168,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/header */ "./components/header.js");
 /* harmony import */ var _components_divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/divider */ "./components/divider.js");
 /* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/footer */ "./components/footer.js");
-/* harmony import */ var _components_create_upload_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/create/upload-image */ "./components/create/upload-image.js");
-/* harmony import */ var _components_create_select_transformation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/create/select-transformation */ "./components/create/select-transformation.js");
-/* harmony import */ var _components_create_email_address__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/create/email-address */ "./components/create/email-address.js");
+/* harmony import */ var _components_loading_overlay__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/loading-overlay */ "./components/loading-overlay.js");
+/* harmony import */ var _components_create_upload_image__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/create/upload-image */ "./components/create/upload-image.js");
+/* harmony import */ var _components_create_select_transformation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/create/select-transformation */ "./components/create/select-transformation.js");
+/* harmony import */ var _components_create_email_address__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/create/email-address */ "./components/create/email-address.js");
 var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/pages/create.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -2152,6 +2202,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
 var _default =
 /*#__PURE__*/
 function (_React$Component) {
@@ -2171,6 +2222,7 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(_default)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
+      running: false,
       file: null,
       transformation: null,
       email: ''
@@ -2199,14 +2251,26 @@ function (_React$Component) {
         return _this.handleError();
       }
 
+      _this.setState({
+        running: false
+      });
+
       alert('Your image will be processed soon');
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleError", function () {
+      _this.setState({
+        running: false
+      });
+
       alert('An error append...');
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleSubmit", function () {
+      _this.setState({
+        running: true
+      });
+
       var formData = new FormData();
       formData.append('picture', _this.state.file);
       formData.append('model', _this.state.transformation);
@@ -2226,50 +2290,58 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 60
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_create_upload_image__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        file: this.state.file,
-        onDrop: this.handleDrop,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 57
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_divider__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 61
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_create_select_transformation__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        selected: this.state.transformation,
-        onClick: this.handleSelect,
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_create_upload_image__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        file: this.state.file,
+        onDrop: this.handleDrop,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 62
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_create_email_address__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        onChange: this.handleChange,
-        onSubmit: this.handleSubmit,
-        value: this.state.email,
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_divider__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 66
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_create_select_transformation__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        selected: this.state.transformation,
+        onClick: this.handleSelect,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 67
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_create_email_address__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        disabled: this.state.running,
+        onChange: this.handleChange,
+        onSubmit: this.handleSubmit,
+        value: this.state.email,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 71
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 77
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_loading_overlay__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        visible: this.state.running,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 78
         },
         __self: this
       }));
@@ -2321,7 +2393,7 @@ var url = function url(path) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 13:
 /*!*******************************!*\
   !*** multi ./pages/create.js ***!
   \*******************************/
@@ -2346,5 +2418,5 @@ module.exports = dll_5d62d38be3592dca3a42;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]));;
+},[[13,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=create.js.map

@@ -31,6 +31,10 @@ button.btn {
   border-style: none;
 }
 
+button.btn[disabled] {
+  background-color: grey;
+}
+
 .btn {
   cursor: pointer;
   display: inline-flex;
