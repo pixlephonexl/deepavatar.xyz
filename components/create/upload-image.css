@@ -15,7 +15,8 @@
 }
 
 .upload-image__preview {
-  width: 100%;
+  object-fit: contain;
+  max-width: 100%;
 }
 
 .upload-image__icon {
