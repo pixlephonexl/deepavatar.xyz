@@ -25,8 +25,30 @@ export default class extends React.Component {
       transformation: transformation.key,
     });
 
-  handleSubmit = () =>
-    console.log('on submit');
+  handleSuccess = (res) => {
+    if (res.status !== 200) {
+      return this.handleError();
+    }
+    alert('Your image will be processed soon');
+  };
+
+  handleError = () => {
+    alert('An error append...');
+  };
+
+  handleSubmit = () => {
+    const formData = new FormData();
+    formData.append('picture', this.state.file);
+    formData.append('model', this.state.transformation);
+    formData.append('email', this.state.email);
+    window
+      .fetch(`${process.env.BACKEND_URL}/api/pictures`, {
+        method: 'POST',
+        body: formData,
+      })
+      .then(this.handleSuccess)
+      .catch(this.handleError);
+  };
 
   render() {
     return (
