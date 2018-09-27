@@ -78,14 +78,14 @@ function (_React$Component) {
         className: "upload-image bg-primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 16
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 17
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_dropzone__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -94,7 +94,7 @@ function (_React$Component) {
         onDrop: this.handleDrop,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 18
         },
         __self: this
       }, file ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -102,27 +102,27 @@ function (_React$Component) {
         src: file.preview,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 24
         },
         __self: this
       }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 29
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "upload-image__icon",
-        src: _services_static__WEBPACK_IMPORTED_MODULE_3__["default"].getUrl('/static/cloud-upload.svg'),
+        src: _services_static__WEBPACK_IMPORTED_MODULE_3__["default"].url('/static/cloud-upload.svg'),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 30
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 34
         },
         __self: this
       }, "Click or drop an image here")))));
@@ -1917,12 +1917,12 @@ function (_React$Component) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var getUrl = function getUrl(path) {
+var url = function url(path) {
   return ["", path].join('');
 };
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  getUrl: getUrl
+  url: url
 });
 
 /***/ }),

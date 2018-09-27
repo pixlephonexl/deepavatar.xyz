@@ -252,7 +252,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _hero_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hero.css */ "./components/main/hero.css");
 /* harmony import */ var _hero_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_hero_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _services_static__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/static */ "./services/static.js");
 var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/main/hero.js";
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
@@ -260,40 +262,40 @@ var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/main/he
     className: "hero__root bg-primary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 7
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "hero__left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 9
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 10
     },
     __self: this
   }, "Make your avatar stand out"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 13
     },
     __self: this
   }, "Transform your avatar with the help of artificial intelligence."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "hero__cta",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 16
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -301,21 +303,21 @@ var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/main/he
     href: "./create",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     },
     __self: this
   }, "Make your own"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "hero__right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 22
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "static/woman.jpg",
+    src: _services_static__WEBPACK_IMPORTED_MODULE_2__["default"].url('/static/woman.jpg'),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }))));
@@ -336,8 +338,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _how_it_works_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./how-it-works.css */ "./components/main/how-it-works.css");
 /* harmony import */ var _how_it_works_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_how_it_works_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _stepper_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./stepper-item */ "./components/main/stepper-item.js");
+/* harmony import */ var _services_static__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/static */ "./services/static.js");
+/* harmony import */ var _stepper_item__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./stepper-item */ "./components/main/stepper-item.js");
 var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/main/how-it-works.js";
+
 
 
 
@@ -346,51 +350,51 @@ var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/main/ho
     className: "howitworks__root",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, "How it works"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_stepper_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    index: 0,
-    title: "Step one",
-    subtitle: "Upload your image",
-    image: "static/cat-normal.jpg",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_stepper_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, "How it works"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_stepper_item__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    index: 0,
+    title: "Step one",
+    subtitle: "Upload your image",
+    image: _services_static__WEBPACK_IMPORTED_MODULE_2__["default"].url('/static/cat-normal.jpg'),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_stepper_item__WEBPACK_IMPORTED_MODULE_3__["default"], {
     index: 1,
     inverted: true,
     title: "Step two",
     subtitle: "Choose your transformation",
-    image: "static/cat-transformation.jpg",
+    image: _services_static__WEBPACK_IMPORTED_MODULE_2__["default"].url('/static/cat-transformation.jpg'),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_stepper_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_stepper_item__WEBPACK_IMPORTED_MODULE_3__["default"], {
     index: 2,
     title: "Step three",
     subtitle: "Download your image and add it to your profiles!",
-    image: "static/gallery.svg",
+    image: _services_static__WEBPACK_IMPORTED_MODULE_2__["default"].url('/static/gallery.svg'),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   })));
@@ -584,7 +588,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _they_love_it_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./they-love-it.css */ "./components/main/they-love-it.css");
 /* harmony import */ var _they_love_it_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_they_love_it_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _services_static__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/static */ "./services/static.js");
 var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/main/they-love-it.js";
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
@@ -592,119 +598,119 @@ var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/main/th
     className: "theyloveit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: this
   }, "They love their avatars"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "theyloveit__person",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "theyloveit__avatar",
-    src: "static/john-smith.jpg",
+    src: _services_static__WEBPACK_IMPORTED_MODULE_2__["default"].url('/static/john-smith.jpg'),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }, "John Smith"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }, "Leader"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     },
     __self: this
   }, "We share a slack with our clients, and it's getting a bit messy. I used deepavatar on all our employees pictures. It's great to be able to identify a poster as part of the team immediately.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "theyloveit__person",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "theyloveit__avatar",
-    src: "static/jane-doe.jpg",
+    src: _services_static__WEBPACK_IMPORTED_MODULE_2__["default"].url('/static/jane-doe.jpg'),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: this
   }, "Jane Doe"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }, "CEO"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     },
     __self: this
   }, "I was getting tired of all those instagram filters. My deepavatar is really different, I love it.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "theyloveit__person",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "theyloveit__avatar",
-    src: "static/john-doe.jpg",
+    src: _services_static__WEBPACK_IMPORTED_MODULE_2__["default"].url('/static/john-doe.jpg'),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: this
   }, "John Doe"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }, "CTO"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }, "As CTO, part of my job is to make sure my tech team is happy, and how they see me on our internal chat tool is important. I've spent so much time trying to find the perfect avatar, now I've got it!"))));
@@ -863,6 +869,25 @@ var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/pages/index.js";
     })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./services/static.js":
+/*!****************************!*\
+  !*** ./services/static.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var url = function url(path) {
+  return ["", path].join('');
+};
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  url: url
+});
 
 /***/ }),
 
