@@ -22,6 +22,7 @@ export default class EmailAddress extends React.Component {
           />
           <button
             className="btn btn--inverted"
+            disabled={this.props.disabled}
             onClick={this.props.onSubmit}
           >
             Submit
