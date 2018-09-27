@@ -2,6 +2,8 @@ import React from 'react';
 import Dropzone from 'react-dropzone';
 import './upload-image.css';
 
+import Static from '../../services/static';
+
 export default class UploadImage extends React.Component {
   handleDrop = (files) => {
     if (!files.length) return;
@@ -27,7 +29,7 @@ export default class UploadImage extends React.Component {
               <React.Fragment>
                 <img
                   className="upload-image__icon"
-                  src="/static/cloud-upload.svg"
+                  src={Static.url('/static/cloud-upload.svg')}
                 />
                 <p>
                   Click or drop an image here

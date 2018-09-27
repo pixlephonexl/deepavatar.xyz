@@ -1,6 +1,8 @@
 import React from 'react';
 import './hero.css';
 
+import Static from '../../services/static';
+
 export default () => (
   <section className="hero__root bg-primary">
     <div className="container">
@@ -18,7 +20,7 @@ export default () => (
         </div>
       </div>
       <div className="hero__right">
-        <img src="/static/woman.jpg" />
+        <img src={Static.url('/static/woman.jpg')} />
       </div>
     </div>
   </section>

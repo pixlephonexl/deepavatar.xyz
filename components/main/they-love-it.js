@@ -1,5 +1,6 @@
 import React from 'react';
 import './they-love-it.css';
+import Static from '../../services/static';
 
 export default () => (
   <section className="theyloveit">
@@ -8,7 +9,7 @@ export default () => (
       <div className="theyloveit__person">
         <img
           className="theyloveit__avatar"
-          src="/static/john-smith.jpg"
+          src={Static.url('/static/john-smith.jpg')}
         />
         <h3>John Smith</h3>
         <h4>Leader</h4>
@@ -17,7 +18,7 @@ export default () => (
       <div className="theyloveit__person">
         <img
           className="theyloveit__avatar"
-          src="/static/jane-doe.jpg"
+          src={Static.url('/static/jane-doe.jpg')}
         />
         <h3>Jane Doe</h3>
         <h4>CEO</h4>
@@ -26,7 +27,7 @@ export default () => (
       <div className="theyloveit__person">
         <img
           className="theyloveit__avatar"
-          src="/static/john-doe.jpg"
+          src={Static.url('/static/john-doe.jpg')}
         />
         <h3>John Doe</h3>
         <h4>CTO</h4>
