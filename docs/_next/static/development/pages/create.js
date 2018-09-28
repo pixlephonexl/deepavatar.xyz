@@ -15,8 +15,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _email_address_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./email-address.css */ "./components/create/email-address.css");
 /* harmony import */ var _email_address_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_email_address_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _services_static__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/static */ "./services/static.js");
-var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/create/email-address.js";
-
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -70,45 +68,20 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-        className: "email-address bg-primary",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12
-        },
-        __self: this
+        className: "email-address bg-primary"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "section-title",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13
-        },
-        __self: this
+        className: "section-title"
       }, "Where should we send it?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16
-        },
-        __self: this
+        className: "container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         placeholder: "morty@getschwif.ty",
         type: "email",
         onChange: this.handleChange,
-        value: this.props.value,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        },
-        __self: this
+        value: this.props.value
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "btn btn--inverted",
         disabled: this.props.disabled,
-        onClick: this.props.onSubmit,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 23
-        },
-        __self: this
+        onClick: this.props.onSubmit
       }, "Submit")));
     }
   }]);
@@ -136,8 +109,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _select_transformation_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_select_transformation_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _transformation_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./transformation-button */ "./components/create/transformation-button.js");
 /* harmony import */ var _services_static__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/static */ "./services/static.js");
-var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/create/select-transformation.js";
-
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -184,37 +155,17 @@ function (_React$Component) {
       var _this = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-        className: "select-transformation",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        },
-        __self: this
+        className: "select-transformation"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "section-title",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        },
-        __self: this
+        className: "section-title"
       }, "Choose your transformation"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 22
-        },
-        __self: this
+        className: "container"
       }, transformations.map(function (transformation) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_transformation_button__WEBPACK_IMPORTED_MODULE_2__["default"], {
           key: transformation.key,
           selected: transformation.key === _this.props.selected,
           transformation: transformation,
-          onClick: _this.props.onClick,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 24
-          },
-          __self: this
+          onClick: _this.props.onClick
         });
       })));
     }
@@ -305,6 +256,7 @@ function (_React$PureComponent) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "transformation-button__preview",
         src: this.props.transformation.image,
         __source: {
           fileName: _jsxFileName,
@@ -316,7 +268,7 @@ function (_React$PureComponent) {
         src: _services_static__WEBPACK_IMPORTED_MODULE_2__["default"].url('/static/check.svg'),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 18
         },
         __self: this
       }) : null);
@@ -346,8 +298,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _upload_image_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./upload-image.css */ "./components/create/upload-image.css");
 /* harmony import */ var _upload_image_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_upload_image_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _services_static__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/static */ "./services/static.js");
-var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/create/upload-image.js";
-
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -405,64 +355,22 @@ function (_React$Component) {
     value: function render() {
       var file = this.props.file;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-        className: "upload-image bg-primary",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16
-        },
-        __self: this
+        className: "upload-image bg-primary"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "section-title",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        },
-        __self: this
+        className: "section-title"
       }, "Pick an image"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        },
-        __self: this
+        className: "container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_dropzone__WEBPACK_IMPORTED_MODULE_1__["default"], {
         accept: "image/*",
         className: "upload-image__dropzone",
-        onDrop: this.handleDrop,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        },
-        __self: this
+        onDrop: this.handleDrop
       }, file ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "upload-image__preview",
-        src: file.preview,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27
-        },
-        __self: this
-      }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 32
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: file.preview
+      }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "upload-image__icon",
-        src: _services_static__WEBPACK_IMPORTED_MODULE_3__["default"].url('/static/cloud-upload.svg'),
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37
-        },
-        __self: this
-      }, "Click or drop an image here")))));
+        src: _services_static__WEBPACK_IMPORTED_MODULE_3__["default"].url('/static/cloud-upload.svg')
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Click or drop an image here")))));
     }
   }]);
 
@@ -486,34 +394,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _divider_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./divider.css */ "./components/divider.css");
 /* harmony import */ var _divider_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_divider_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/divider.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "divider",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
+    className: "divider"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
     viewBox: "0 0 1695 56",
-    preserveAspectRatio: "none",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
+    preserveAspectRatio: "none"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
     d: "M0 23c135.4 19 289.6 28.5 462.5 28.5C721.9 51.5 936.7 1 1212.2 1 1395.8.9 1556.7 8.3 1695 23v34H0V23z",
     fill: "#fff",
-    fillRule: "evenodd",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
+    fillRule: "evenodd"
   })));
 });
 
@@ -532,38 +424,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer.css */ "./components/footer.css");
 /* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_footer_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/footer.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
-    className: "footer",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
+    className: "footer"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, "\xA9 ", new Date().getFullYear(), " In Your Saas"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "\xA9 ", new Date().getFullYear(), " In Your Saas"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.inyoursaas.io/",
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
+    target: "_blank"
   }, "In Your Saas")));
 });
 
@@ -582,32 +452,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header.css */ "./components/header.css");
 /* harmony import */ var _header_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_header_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/header.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
-    className: "header__root bg-primary",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
+    className: "header__root bg-primary"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "header__container container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
+    className: "header__container container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "header__link",
-    href: "",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
+    href: ""
   }, "deepavatar")));
 });
 
@@ -626,37 +480,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _loading_overlay_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loading-overlay.css */ "./components/loading-overlay.css");
 /* harmony import */ var _loading_overlay_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_loading_overlay_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/components/loading-overlay.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
   return props.visible ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "loading-overlay",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
+    className: "loading-overlay"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "loading-overlay__ripple",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }))) : null;
+    className: "loading-overlay__ripple"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null))) : null;
 });
 
 /***/ }),
@@ -2172,8 +2003,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_create_upload_image__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/create/upload-image */ "./components/create/upload-image.js");
 /* harmony import */ var _components_create_select_transformation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/create/select-transformation */ "./components/create/select-transformation.js");
 /* harmony import */ var _components_create_email_address__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/create/email-address */ "./components/create/email-address.js");
-var _jsxFileName = "/home/jeremie/Workspace/deepavatar-client/pages/create.js";
-
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2275,7 +2104,7 @@ function (_React$Component) {
       formData.append('picture', _this.state.file);
       formData.append('model', _this.state.transformation);
       formData.append('email', _this.state.email);
-      window.fetch("".concat("http://localhost:3010", "/api/pictures"), {
+      window.fetch("".concat("https://deepavatar-api-production.herokuapp.com", "/api/pictures"), {
         method: 'POST',
         body: formData
       }).then(_this.handleSuccess).catch(_this.handleError);
@@ -2287,63 +2116,19 @@ function (_React$Component) {
   _createClass(_default, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 60
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 61
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_create_upload_image__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_create_upload_image__WEBPACK_IMPORTED_MODULE_5__["default"], {
         file: this.state.file,
-        onDrop: this.handleDrop,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 62
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_divider__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 66
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_create_select_transformation__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        onDrop: this.handleDrop
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_divider__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_create_select_transformation__WEBPACK_IMPORTED_MODULE_6__["default"], {
         selected: this.state.transformation,
-        onClick: this.handleSelect,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 67
-        },
-        __self: this
+        onClick: this.handleSelect
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_create_email_address__WEBPACK_IMPORTED_MODULE_7__["default"], {
         disabled: this.state.running,
         onChange: this.handleChange,
         onSubmit: this.handleSubmit,
-        value: this.state.email,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 71
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 77
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_loading_overlay__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        visible: this.state.running,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 78
-        },
-        __self: this
+        value: this.state.email
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_footer__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_loading_overlay__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        visible: this.state.running
       }));
     }
   }]);
