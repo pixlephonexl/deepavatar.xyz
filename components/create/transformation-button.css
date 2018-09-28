@@ -3,6 +3,7 @@
   display: inline-flex;
   margin: 20px;
   max-width: 120px;
+  max-height: 120px;
 }
 
 .transformation-button .check {
@@ -11,5 +12,11 @@
   right: -10px;
   width: 40px;
   height: 40px;
+}
+
+.transformation-button__preview {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
 }
 

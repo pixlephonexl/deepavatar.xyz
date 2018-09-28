@@ -10,7 +10,10 @@ export default class TransformationButton extends React.PureComponent {
   render() {
     return (
       <div className="transformation-button" onClick={this.handleClick}>
-        <img src={this.props.transformation.image} />
+        <img
+          className="transformation-button__preview"
+          src={this.props.transformation.image}
+        />
         {this.props.selected ? (
           <img className="check" src={Static.url('/static/check.svg')} />
         ) : null}
