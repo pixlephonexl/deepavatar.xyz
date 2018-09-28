@@ -8,7 +8,6 @@ module.exports = withCSS({
       '/': { page: '/' },
       '/create': { page: '/create' },
     };
-  },
-  assetPrefix: debug ? './' : `/deepavatar.xyz`,
+ },
 });
 
