@@ -16,6 +16,7 @@
 
 .upload-image__preview {
   object-fit: contain;
+  max-height: 100%;
   max-width: 100%;
 }
 
