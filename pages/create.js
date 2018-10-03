@@ -1,4 +1,5 @@
 import React from 'react';
+import validate from 'validate.js';
 import Header from '../components/header';
 import Divider from '../components/divider';
 import Footer from '../components/footer';
@@ -8,6 +9,27 @@ import UploadImage from '../components/create/upload-image';
 import SelectTransformation from '../components/create/select-transformation';
 import EmailAddress from '../components/create/email-address';
 
+const constraints = {
+  file: {
+    presence: {
+      allowEmpty: false,
+    },
+  },
+  transformation: {
+    presence: true,
+    inclusion: [
+      'candy',
+      'mosaic',
+      'rain',
+      'udnie',
+    ],
+  },
+  email: {
+    presence: true,
+    email: true,
+  },
+};
+
 export default class extends React.Component {
   state = {
     running: false,
@@ -15,6 +37,10 @@ export default class extends React.Component {
     transformation: null,
     email: '',
   };
+
+  isFormInvalid() {
+    return !!validate(this.state, constraints);
+  }
 
   handleChange = (email) =>
     this.setState({ email });
@@ -69,7 +95,7 @@ export default class extends React.Component {
           onClick={this.handleSelect}
         />
         <EmailAddress
-          disabled={this.state.running}
+          disabled={this.state.running || this.isFormInvalid()}
           onChange={this.handleChange}
           onSubmit={this.handleSubmit}
           value={this.state.email}
